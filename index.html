@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calc | AR</title>
+</head>
+<body>
+    <form name="form">
+        <div class="show-result">
+          <input type="text"  name="res" />
+        </div>
+          <div class="buttons">
+            <div class="row">
+            <input type="button" name="c7" value="7" onclick="calc(c7.value)">
+              <input type="button" name="c8" value="8" onClick="calc(c8.value)">
+              <input type="button" name="c9" value="9" onClick="calc(c9.value)">
+              <input type="button" name="incree" value="+" onClick="calc(incree.value)">
+            </div>
+            
+            <div class="row">
+            <input type="button" name="c4" value="4" onClick="calc(c4.value)">
+              <input type="button" name="c5" value="5" onClick="calc(c5.value)">
+              <input type="button" name="c6" value="6" onClick="calc(c6.value)">
+              <input type="button" name="decre" value="-" onClick="calc(decre.value)">
+            </div>
+            
+            <div class="row">
+            <input type="button" name="c1" value="1" onClick="calc(c1.value)">
+              <input type="button" name="c2" value="2" onClick="calc(c2.value)">
+              <input type="button" name="c3" value="3" onClick="calc(c3.value)">
+              <input type="button" name="mul" value="*" onClick="calc(mul.value)">
+            </div>
+            
+            <div class="row">
+                <input type="button" name="c0" value="0" onClick="calc(c0.value)">
+                <input type="button" name="dot" value="." onClick="calc(dot.value)">
+                <input type="button" class="clear" value="Clear" onClick="backspace();">
+                <input type="button" class="red" value="=" onClick="res.value=eval(res.value)">
+            </div>
+          </div>
+        </form>
+</body>
+</html>
